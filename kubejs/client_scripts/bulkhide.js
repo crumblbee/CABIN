@@ -170,6 +170,13 @@ JEIEvents.hideItems(event => {
     event.hide("chiselsandbits:block_bit")
 
     event.hide("trials:crafter")
+
+    event.hide("aquaculture:wooden_fillet_knife")
+    event.hide("aquaculture:stone_fillet_knife")
+    event.hide("aquaculture:iron_fillet_knife")
+    event.hide("aquaculture:gold_fillet_knife")
+    event.hide("aquaculture:diamond_fillet_knife")
+    event.hide("aquaculture:neptunium_fillet_knife")
 })
 
 JEIEvents.hideFluids(event => {
