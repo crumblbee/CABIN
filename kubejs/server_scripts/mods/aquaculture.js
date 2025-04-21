@@ -12,14 +12,14 @@ if(Platform.isLoaded("aquaculture")) {
 
         let fillet_recipe = (name, count) => {
             event.custom({
-                type: 'farmersdelight:cutting',
+                type: "farmersdelight:cutting",
                 ingredients: [
                     { item: name }
                 ],
-                tool: { tag: 'forge:tools/knives' },
+                tool: { tag: "forge:tools/knives" },
                 result: [
-                    { item: 'aquaculture:fish_fillet_raw', count: count },
-                    { item: 'minecraft:bone_meal'}
+                    { item: "aquaculture:fish_fillet_raw", count: count },
+                    { item: "minecraft:bone_meal"}
                 ]
             })
         }
