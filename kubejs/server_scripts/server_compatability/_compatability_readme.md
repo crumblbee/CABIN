@@ -21,6 +21,7 @@ if (Platform.isLoaded('YourModID')) { // Mod ID goes here
 		// Shapeless recipe example
 		event.shapeless("create:creative_crate", ["minecraft:redstone_ore", "minecraft:lapis_ore"])
 		// Please refer to the kubejs wiki for other recipe types
+		// Also note that you can easily get an item's ID with /kjs hand
 		// https://wiki.latvian.dev/books/kubejs/page/recipes
 	})
 }
