@@ -29,7 +29,7 @@ if (Platform.isLoaded("supplementaries")) {
         event.shapeless(Item.of("create:copper_valve_handle"), ["#create:valve_handles","supplementaries:soap"] ).id("kubejs:soap_clean_valve_handle_manual_only")
         // Copy the NBT data for this one so that removing dye doesn't eat our stuff.
         event.shapeless(Item.of("create:brown_toolbox"), ["#create:toolboxes","supplementaries:soap"] ).id("kubejs:soap_clean_toolbox_manual_only").modifyResult((grid, result) => {
-        const item = grid.find(Ingredient.of("#create:toolboxes"))
+            const item = grid.find(Ingredient.of("#create:toolboxes"))
             return result.withNBT(item.nbt)
         })
     })
