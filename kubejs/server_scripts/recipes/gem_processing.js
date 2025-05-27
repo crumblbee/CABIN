@@ -10,9 +10,6 @@ ServerEvents.recipes(event => {
     event.remove({ id: "thermal:machines/pulverizer/pulverizer_cinnabar" })
     event.recipes.thermal.pulverizer(Item.of("minecraft:redstone", 8), "thermal:cinnabar", 0, 10000)
 
-    event.recipes.thermal.pulverizer("thermal:sapphire_dust", "thermal:sapphire", 0, 4000)
-    event.recipes.thermal.pulverizer("thermal:ruby_dust", "thermal:ruby", 0, 4000)
-
     event.recipes.create.milling("thermal:sulfur_dust", "#forge:gems/sulfur").processingTime(500)
     event.recipes.create.milling("thermal:niter_dust", "#forge:gems/niter").processingTime(500)
     event.recipes.create.milling("thermal:apatite_dust", "#forge:gems/apatite").processingTime(500)

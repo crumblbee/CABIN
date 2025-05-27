@@ -30,10 +30,16 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing([Item.of("thermal:bitumen"), Item.of("thermal:bitumen", 2).withChance(0.75), Item.of("thermal:tar", 1).withChance(0.75), Item.of("minecraft:red_sand").withChance(0.25)], "thermal:oil_red_sand")
     // ruby and sapphire block recipes
     let blockTemplate = [ "III", "III",	"III"	]
-    event.shaped(Item.of("thermal:ruby_block", 1), blockTemplate, { I: "#forge:gems/ruby"	})
+    event.shaped(Item.of("thermal:ruby_block", 1), blockTemplate, { I: "#forge:gems/ruby"})
     event.shapeless(Item.of("thermal:ruby", 9), ["#forge:storage_blocks/ruby"])
-    event.shaped(Item.of("thermal:sapphire_block", 1), blockTemplate, { I: "#forge:gems/sapphire"	})
+    event.shaped(Item.of("thermal:sapphire_block", 1), blockTemplate, { I: "#forge:gems/sapphire"})
     event.shapeless(Item.of("thermal:sapphire", 9), ["#forge:storage_blocks/sapphire"])
+    // Ruby and sapphire dusts from pulverizing
+    event.recipes.thermal.pulverizer("thermal:sapphire_dust", "thermal:sapphire", 0, 4000)
+    event.recipes.thermal.pulverizer("thermal:ruby_dust", "thermal:ruby", 0, 4000)
+    // Ruby and sapphire dusts from earth charges
+    event.shapeless(Item.of("thermal:ruby_dust"), ["#forge:gems/ruby", "thermal:earth_charge"])
+    event.shapeless(Item.of("thermal:sapphire_dust"), ["#forge:gems/sapphire", "thermal:earth_charge"])
     // Make molten glass with the cruicible
     event.recipes.thermal.crucible(Fluid.of("tconstruct:molten_glass", 1000), "#forge:sand", 0, 6000)
     event.recipes.thermal.crucible(Fluid.of("tconstruct:molten_glass", 1000), "#forge:glass/colorless", 0, 3000)
