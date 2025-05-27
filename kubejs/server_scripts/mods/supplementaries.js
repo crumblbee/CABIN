@@ -24,6 +24,14 @@ if (Platform.isLoaded("supplementaries")) {
         event.stonecutting("supplementaries:timber_frame", "#kubejs:timber_frame")
         event.stonecutting("supplementaries:timber_brace", "#kubejs:timber_frame")
         event.stonecutting("supplementaries:timber_cross_brace", "#kubejs:timber_frame")
+
+        // Fix crafting table dye removal recipes for these items
+        event.shapeless(Item.of("create:copper_valve_handle"), ["#create:valve_handles","supplementaries:soap"] ).id("kubejs:soap_clean_valve_handle_manual_only")
+        // Copy the NBT data for this one so that removing dye doesn't eat our stuff.
+        event.shapeless(Item.of("create:brown_toolbox"), ["#create:toolboxes","supplementaries:soap"] ).id("kubejs:soap_clean_toolbox_manual_only").modifyResult((grid, result) => {
+            const item = grid.find(Ingredient.of("#create:toolboxes"))
+            return result.withNBT(item.nbt)
+        })
     })
 
     ServerEvents.tags("item", event => {
@@ -31,5 +39,19 @@ if (Platform.isLoaded("supplementaries")) {
             .add("supplementaries:timber_frame")
             .add("supplementaries:timber_brace")
             .add("supplementaries:timber_cross_brace")
+    })
+
+    ServerEvents.tags("block", event => {
+        // Whitelist these items to allow the removal of dye in-world using soap (see supplementaries common config)
+        const dyedHandles = event.get("create:valve_handles").getObjectIds()
+        const dyedHandlesBlacklist = Ingredient.of(/.*copper.*/)
+        dyedHandles.forEach(handle => {
+            if (!dyedHandlesBlacklist.test(handle)) event.add("kubejs:valve_handles_dyed", handle)
+        })
+        const dyedToolboxes = event.get("create:toolboxes").getObjectIds()
+        const dyedToolboxesBlacklist = Ingredient.of(/.*brown.*/)
+        dyedToolboxes.forEach(toolbox => {
+            if (!dyedToolboxesBlacklist.test(toolbox)) event.add("kubejs:toolboxes_dyed", toolbox)
+        })
     })
 }
