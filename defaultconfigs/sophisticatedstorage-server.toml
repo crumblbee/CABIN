@@ -6,6 +6,11 @@
 	#Threshold of number of item entities dropped from chest / barrel above which break is canceled (unless shift key is pressed) and message is displayed explaining to player many drops and packing tape use
 	#Range: 0 ~ 1000
 	tooManyItemEntityDrops = 200
+	#Determines if limited barrel counts can be dyed to change their color
+	limitedBarrelCountDyeingEnabled = true
+	#Defines the maximum range of the controller at which it connects storage blocks to multiblock
+	#Range: 4 ~ 64
+	controllerRange = 15
 
 	#Wood Barrel Settings
 	[server.WoodBarrel]
@@ -299,7 +304,7 @@
 	[server.IronChest]
 		#Number of inventory slots in the storage
 		#Range: 1 ~ 180
-		inventorySlotCount = 36	
+		inventorySlotCount = 36
 		#Number of upgrade slots in the storage
 		#Range: 0 ~ 10
 		upgradeSlotCount = 2

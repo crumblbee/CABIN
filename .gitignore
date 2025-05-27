@@ -54,7 +54,6 @@ config/immediatelyfast.json
 config/ftbbackups2.json
 config/spark/tmp
 config/spark/activity.json
-config/roughlyenoughitems/hints.json
 config/voicechat/username-cache.json
 config/minihud/*
 config/embeddium-fingerprint.json
@@ -69,6 +68,7 @@ config/emi.css
 config\darkmodeeverywhereshaders.json
 config\darkmodeeverywhereshaders.toml
 config/ichunutil/themes
+config/everycomp-hazardous.properties
 
 #Hide code-generated files
 kubejs/client_scripts/Dev_Capes.js
