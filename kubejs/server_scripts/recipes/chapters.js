@@ -444,7 +444,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "create:sequenced_assembly",
         "ingredient": { "item": "create:precision_mechanism" },
-        "loops": 6,
+        "loops": 1,
         "results": [
             { "item": "kubejs:infernal_mechanism" }
         ],
