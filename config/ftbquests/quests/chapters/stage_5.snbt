@@ -797,9 +797,13 @@
 		}
 		{
 			dependencies: [
+				"3F1B9487F515D609"
 				"29CF41B34D00FE4D"
 				"6DC501212658D17B"
+				"0DB6C5E3A6A8DCE0"
+				"55DD1BA6C84857AE"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{cabin.quest.5B0727505DC791DF.description1}"
 				""
@@ -820,6 +824,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 2.0d
 			subtitle: "{cabin.quest.5B0727505DC791DF.subtitle}"
 			tasks: [{
 				icon: "kubejs:navigation_computer"
@@ -840,12 +845,12 @@
 			invisible_until_tasks: 2
 			size: 0.066d
 			tasks: [{
-				dimension: "beyond_earth:earth_orbit"
+				dimension: "ad_astra:earth_orbit"
 				id: "1E9A31CD9922C4D4"
 				type: "dimension"
 			}]
-			x: 3.9600000000000004d
-			y: 8.184000000000001d
+			x: 4.9830000000000005d
+			y: 8.052000000000001d
 		}
 		{
 			disable_toast: true
@@ -854,12 +859,54 @@
 			invisible_until_tasks: 2
 			size: 0.066d
 			tasks: [{
-				dimension: "beyond_earth:moon_orbit"
+				dimension: "ad_astra:moon_orbit"
 				id: "07E1966C4161B858"
 				type: "dimension"
 			}]
-			x: 3.9600000000000004d
-			y: 8.118d
+			x: 4.9830000000000005d
+			y: 7.986000000000001d
+		}
+		{
+			disable_toast: true
+			id: "3F1B9487F515D609"
+			invisible: true
+			invisible_until_tasks: 2
+			size: 0.066d
+			tasks: [{
+				dimension: "ad_astra:mars_orbit"
+				id: "66D7010C274A0BD4"
+				type: "dimension"
+			}]
+			x: 4.9830000000000005d
+			y: 7.8870000000000005d
+		}
+		{
+			disable_toast: true
+			id: "0DB6C5E3A6A8DCE0"
+			invisible: true
+			invisible_until_tasks: 2
+			size: 0.066d
+			tasks: [{
+				dimension: "ad_astra:mercury_orbit"
+				id: "73D99A27A447C2B7"
+				type: "dimension"
+			}]
+			x: 5.082000000000001d
+			y: 8.052000000000001d
+		}
+		{
+			disable_toast: true
+			id: "55DD1BA6C84857AE"
+			invisible: true
+			invisible_until_tasks: 2
+			size: 0.066d
+			tasks: [{
+				dimension: "ad_astra:glacio_orbit"
+				id: "4878254BF48F2240"
+				type: "dimension"
+			}]
+			x: 5.082000000000001d
+			y: 7.986000000000001d
 		}
 	]
 	title: "{cabin.chapter.75CF8B6BAC6A01EF.title}"
