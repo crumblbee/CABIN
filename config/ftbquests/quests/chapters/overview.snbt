@@ -241,7 +241,7 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				dimension: "beyond_earth:moon"
+				dimension: "ad_astra:moon"
 				icon: {
 					Count: 1
 					id: "ad_astra:tier_1_rocket"
