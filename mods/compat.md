@@ -94,14 +94,6 @@
     <p>The Integrated Strongholds mod overhauls strongholds into a massive dungeon that makes use of blocks from Create, Supplementaries, and Quark. We've decided against including this mod in the base pack because its heavy focus on puzzles and lore, however, if that sounds like something you're interested in, consider giving this mod a try.</p>
     </td>
   </tr>
-  <tr>
-    <td><p><a href="https://curseforge.com/projects/581495">Oculus</a></p></td>
-    <td><p>SC</p></td>
-    <td>
-    <p><b>Don't let your mod launcher install Rubidium alongside it, the pack aleady includes Embeddium which is a forked version of Rubidium with more features.</b></p>
-    <p>Isn't in the base pack currently due to uncertainty around its performance with Create/Flywheel 6. May cause lag with massive factories</p>
-    </td>
-  </tr>
 </table>
 
 <!--<h2>Other Compatible Mods</h2>
