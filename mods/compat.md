@@ -38,16 +38,55 @@
     <td>
         <p>Create: Enchantment Industry is a mod that adds ways to automate enchanting into Create. It adds blocks that can automatically enchant and disenchant items using liquid experience.</p>
     </td>
-  </tr>
-  <tr>
   <tr>
     <td><p><a href="https://curseforge.com/projects/936020">Create Powerloader</a></p></td>
     <td><p>SC</p></td>
     <td>
-        <p>Powerloader adds machines that can chunkload areas in area up to 5x5 with Stress Units.</p>
+        <p>Powerloader adds machines that can chunkload areas in an area up to 5x5 with Stress Units.</p>
     </td>
   </tr>
   <tr>
+    <td><p><a href="https://curseforge.com/projects/947914">Create: Connected</a></p></td>
+    <td><p>SC</p></td>
+    <td>
+        <p>Create Connected adds a varity of blocks helpful</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p><a href="https://curseforge.com/projects/688768">Create Enchantment Industry</a></p></td>
+    <td><p>SC</p></td>
+    <td>
+        <p>Create: Enchantment Industry adds ways to automate enchanting into Create. It includes blocks that can automatically enchant and disenchant items using liquid experience. Notably, CABIN adds custom textures for CEI!</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p><a href="https://curseforge.com/projects/1281336">Create: Hypertubes</a></p></td>
+    <td><p>SC</p></td>
+    <td>
+        <p>Create: Hypertubes introduces high-speed transportation ducts powered by Create, a bit like the viaducts of old.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p><a href="https://curseforge.com/projects/439890">Create: Crafts & Additions</a></p></td>
+    <td><p>SC</p></td>
+    <td>
+        <p>Create Crafts & Additions extends Create and acts as a bridge between electricity and kinetic energy from Create by adding an Electric Motor, for those wishing to mix it up from dynamos.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><p><a href="https://curseforge.com/projects/829380">Create: Encased</a></p></td>
+    <td><p>SC</p></td>
+    <td>
+        <p>Create: Encased allows you to use all casing types in shafts, cogwheels and pipes. </p>
+    </td>
+  </tr>
+  <tr>
+    <td><p><a href="https://curseforge.com/projects/869316">Create: Diesel Generators</a></p></td>
+    <td><p>SC</p></td>
+    <td>
+        <p>Create: Diesel Generators introduces diesel-powered generators for Create, providing a new energy source for your factories.</p>
+    </td>
+  </tr>
     <td><p><a href="https://curseforge.com/projects/815548">Integrated Strongholds</a></p></td>
     <td><p>*SC</p></td>
     <td>
