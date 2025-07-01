@@ -49,7 +49,7 @@
     <td><p><a href="https://curseforge.com/projects/947914">Create: Connected</a></p></td>
     <td><p>SC</p></td>
     <td>
-        <p>Create Connected adds a varity of blocks helpful</p>
+        <p>Create Connected adds a varity of blocks helpful in setting your base up.</p>
     </td>
   </tr>
   <tr>
