@@ -35,6 +35,12 @@ ServerEvents.recipes(event => {
     alchemy_smelt("zinc", "metal", "apatite", "slime")
     alchemy_smelt("iron", "metal", "certus", "prismarine")
 
+    alchemy_mix("emerald", "gem", "lead", "certus")
+    alchemy_mix("sapphire", "gem", "copper", "fluix")
+    alchemy_mix("diamond", "gem", "gold", "niter")
+    alchemy_mix("lapis", "gem", "nickel", "quartz")
+    alchemy_mix("ruby", "gem", "zinc", "sulfur")
+    alchemy_mix("cinnabar", "gem", "iron", "apatite")
 
     alchemy_smelt("andesite", "igneous", "emerald", "iron", 20)
     alchemy_smelt("diorite", "igneous", "sapphire", "lead", 20)
