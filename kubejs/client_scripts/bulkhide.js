@@ -176,7 +176,6 @@ JEIEvents.hideItems(event => {
     event.hide("aquaculture:iron_fillet_knife")
     event.hide("aquaculture:gold_fillet_knife")
     event.hide("aquaculture:diamond_fillet_knife")
-    event.hide("aquaculture:neptunium_fillet_knife")
 })
 
 JEIEvents.hideFluids(event => {

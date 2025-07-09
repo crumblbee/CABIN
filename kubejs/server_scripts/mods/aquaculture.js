@@ -57,7 +57,9 @@ if(Platform.isLoaded("aquaculture")) {
         event.remove({ id: "aquaculture:iron_fillet_knife" })
         event.remove({ id: "aquaculture:gold_fillet_knife" })
         event.remove({ id: "aquaculture:diamond_fillet_knife" })
-        event.remove({ id: "aquaculture:neptunium_fillet_knife" })
+
+        // Fix neptunium knife not being unbreakable
+        event.replaceOutput({ id: "aquaculture:neptunium_fillet_knife" }, "aquaculture:neptunium_fillet_knife", Item.of("aquaculture:neptunium_fillet_knife").withNBT({Unbreakable:1, HideFlags:4}))
     })
 
     ServerEvents.tags("item", event => {
@@ -73,6 +75,17 @@ if(Platform.isLoaded("aquaculture")) {
             .remove("aquaculture:iron_fillet_knife")
             .remove("aquaculture:gold_fillet_knife")
             .remove("aquaculture:diamond_fillet_knife")
-            .remove("aquaculture:neptunium_fillet_knife")
+
+        event.get("farmersdelight:tools/knives")
+            .add("aquaculture:neptunium_fillet_knife")
+    })
+
+    // Give neptunium knifes the unbreakable tag so that they don't break when used by deployers
+    PlayerEvents.inventoryChanged("aquaculture:neptunium_fillet_knife", event => {
+        let nbt = event.item.getNbt() || {};
+        nbt.Unbreakable = 1;
+        nbt.HideFlags = 4;
+        event.item.setNbt(nbt);
+        return;
     })
 }
