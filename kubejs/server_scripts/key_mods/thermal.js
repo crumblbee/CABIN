@@ -140,7 +140,7 @@ ServerEvents.recipes(event => {
         "slimesteel",
         "soulsteel",
         "steel",
-        "tin",
+        // "tin",
         "tungsten",
         "uranium"// ,
         // "zinc"
