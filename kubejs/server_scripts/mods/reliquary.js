@@ -49,7 +49,7 @@ if(Platform.isLoaded("reliquary")) {
         createAlkahestryRecipe("#forge:ingots/lead", 32, 2).id(recipePath + "lead_ingot" + manualOnly)
 
         createAlkahestryRecipe("#forge:gems/apatite", 8, 5).id(recipePath + "apatite" + manualOnly)
-        createAlkahestryRecipe("#forge:gems/apatite", 8, 3).id(recipePath + "niter" + manualOnly)
+        createAlkahestryRecipe("#forge:gems/niter", 8, 3).id(recipePath + "niter" + manualOnly)
         createAlkahestryRecipe("#forge:gems/sulfur", 8, 3).id(recipePath + "sulfur" + manualOnly)
         createAlkahestryRecipe("#forge:gems/cinnabar", 16, 2).id(recipePath + "cinnabar" + manualOnly)
         createAlkahestryRecipe("#forge:gems/ruby", 64, 2).id(recipePath + "ruby" + manualOnly)
