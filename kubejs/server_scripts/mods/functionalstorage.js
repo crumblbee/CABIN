@@ -78,6 +78,12 @@ if(Platform.isLoaded("functionalstorage")) {
         })
         event.remove({ id:"functionalstorage:void_upgrade"})
         donutCraft(event, Item.of("functionalstorage:void_upgrade", 4), "#functionalstorage:drawer", "minecraft:obsidian")
+
+        event.remove({ id: "functionalstorage:puller_upgrade" })
+        event.remove({ id: "functionalstorage:pusher_upgrade" })
+        event.remove({ id: "functionalstorage:collector_upgrade" })
+
+        event.replaceInput({ id: "functionalstorage:linking_tool" }, "minecraft:diamond", "thermal:enderium_ingot")
     })
 
     ServerEvents.tags("block", event => {

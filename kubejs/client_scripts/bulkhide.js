@@ -181,6 +181,15 @@ JEIEvents.hideItems(event => {
     event.hide("aquaculture:iron_fillet_knife")
     event.hide("aquaculture:gold_fillet_knife")
     event.hide("aquaculture:diamond_fillet_knife")
+
+    event.hide("functionalstorage:puller_upgrade")
+    event.hide("functionalstorage:pusher_upgrade")
+    event.hide("functionalstorage:collector_upgrade")
+
+    event.hide("sophisticatedbackpacks:magnet_upgrade")
+    event.hide("sophisticatedbackpacks:advanced_magnet_upgrade")
+    event.hide("sophisticatedstorage:magnet_upgrade")
+    event.hide("sophisticatedstorage:advanced_magnet_upgrade")
 })
 
 JEIEvents.hideFluids(event => {

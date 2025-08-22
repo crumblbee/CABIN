@@ -130,4 +130,10 @@ ServerEvents.recipes(event => {
 
     // Upgrades
     brassMachine(event, Item.of("sophisticatedstorage:advanced_hopper_upgrade", 2))
+
+    // Remove Magnet upgrades
+    event.remove({ id: "sophisticatedbackpacks:magnet_upgrade" })
+    event.remove({ id: "sophisticatedbackpacks:advanced_magnet_upgrade" })
+    event.remove({ id: "sophisticatedstorage:magnet_upgrade" })
+    event.remove({ id: "sophisticatedstorage:advanced_magnet_upgrade" })
 })
