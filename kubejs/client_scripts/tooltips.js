@@ -46,6 +46,8 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("kubejs:accellerator_redstone", Text.translatable("item.kubejs.accellerator_redstone.tooltip"));
     tooltip.add("kubejs:accellerator_glowstone", Text.translatable("item.kubejs.accellerator_glowstone.tooltip"));
 
+    tooltip.addAdvanced("ftbquests:book", (item, adv, text) => { text.add(2, Text.gray(Text.translatable("ftbquests.book.tooltip"))) })
+
     for (let i = 0; i < 15; i++) {
         tooltip.add(`kubejs:failed_alchemy_${i}`, Text.translatable("item.kubejs.failed_alchemy.tooltip"));
     }
