@@ -212,7 +212,7 @@
     "item.functionalstorage.controller.tooltip": "Allows automation to insert and extract from connected drawers",
     "item.functionalstorage.controller_extension.tooltip": "Serves as an extra point for automation to insert and extract items from if a drawer controller is present.",
     "item.kubejs.pureore.tooltip": "§7A purer grade of ore. §7Can only be found by exploring.",
-    "ftbquests.book.tooltip": "The quest window can also be opened with [`].",
+    "ftbquests.book.tooltip": "The quest window can also be opened with a keybind.",
     "item.kubejs.accellerator_redstone.tooltip": "§7When used in Alchemy Research: §6One of the §ecorrect §6Reagents in §eincorrect §6slots will not be consumed",
     "item.kubejs.accellerator_glowstone.tooltip": "§7When used in Alchemy Research: §6One of the §ecorrect §6Reagents in §ecorrect §6slots will not be consumed",
     "item.kubejs.failed_alchemy.tooltip": "§7Place in Centrifugal Separator to analyse.\n\n§6Yields\n- Ash §7for each incorrect ingredient\n- Redstone §7for each correct ingredient in an incorrect slot\n- Glowstone §7for each correct ingredient in the correct slot",
